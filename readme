@@ -14,7 +14,7 @@ This project is a voice bot application built using Streamlit, Google�
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/voice_bot.git
+    git clone https://github.com/nishkarshsharma/voice_bot.git
     cd voice-bot
     ```
 2. Create and activate a virtual environment:
