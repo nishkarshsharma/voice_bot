@@ -1,0 +1,58 @@
+# Voice Bot by Nishkarsh Sharma
+This project is a voice bot application built using Streamlit, Google Cloud services, and various Python libraries. The bot captures speech from the microphone, processes it, and generates a conversational response using a generative model. The response is then converted to speech and played back to the user.
+## Features
+- Capture and process speech from the microphone.
+- Generate conversational responses using a generative model.
+- Convert text responses to speech.
+- Play back the generated speech to the user.
+- Upload audio files to Google Cloud Storage.
+## Prerequisites
+- Python 3.7 or higher
+- Google Cloud account with appropriate permissions
+- Google Cloud Storage bucket
+- Google Application Credentials JSON file
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/voice-bot.git
+    cd voice-bot
+    ```
+2. Create and activate a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. Set up Google Cloud credentials:
+    - Place your `env.json` file in the project root directory.
+    - Set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable:
+        ```bash
+        export GOOGLE_APPLICATION_CREDENTIALS="env.json"
+        ```
+5. Create a `config.json` file in the project root directory with the following content:
+    ```json
+    {
+        "MODEL_ID": "your-model-id",
+        "PROJECT_ID": "your-project-id",
+        "REGION": "your-region",
+        "BUCKET": "your-bucket-name"
+    }
+    ```
+## Usage
+1. Run the Streamlit application:
+    ```bash
+    streamlit run main.py
+    ```
+2. Open the application in your browser:
+    ```
+    http://localhost:8501
+    ```
+3. Interact with the voice bot by clicking the "Start Listening" button and speaking into your microphone.
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+## License
+This project is licensed under the MIT License.
+
